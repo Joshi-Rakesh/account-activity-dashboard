@@ -1,5 +1,6 @@
 {
   "name": "twitter-webhook-boilerplate-node",
+  "homepage": "https://sagar-go.github.io/sagar-webhook",
   "version": "1.0.0",
   "description": "Sample web app and helper scripts to get started with Twitter's Account Activity API",
   "engines": {
@@ -7,7 +8,9 @@
   },
   "main": "index.js",
   "scripts": {
-    "start": "node app.js"
+    "start": "node app.js",
+    "predeploy": "npm run build",
+"deploy": "gh-pages -d build"
   },
   "dependencies": {
     "body-parser": "^1.16.1",
@@ -39,5 +42,8 @@
     "webhook",
     "twitter"
   ],
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "gh-pages": "^4.0.0"
+  }
 }
