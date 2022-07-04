@@ -11,7 +11,8 @@ const socket = require("./helpers/socket");
 
 const app = express();
 
-app.set("port", process.env.PORT || 8080);
+// app.set("port", process.env.PORT || 8080);
+let port = process.env.PORT || 8080;
 app.set("views", __dirname + "/views");
 app.set("view engine", "ejs");
 
@@ -27,10 +28,14 @@ app.use(
   })
 );
 
-// start server
-const server = app.listen(app.get("port"), function () {
-  console.log("Node app is running on port", app.get("port"));
+app.listen(port, () => {
+  console.log(`app is running at the port ${port}`);
 });
+
+// start server
+// const server = app.listen(app.get("port"), function () {
+//   console.log("Node app is running on port", app.get("port"));
+// });
 
 // initialize socket.io
 socket.init(server);
