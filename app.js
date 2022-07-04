@@ -11,7 +11,7 @@ const socket = require("./helpers/socket");
 
 const app = express();
 
-app.set("port", process.env.PORT);
+app.set("port", 3000);
 app.set("views", __dirname + "/views");
 app.set("view engine", "ejs");
 
