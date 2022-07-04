@@ -4,17 +4,14 @@
   "version": "1.0.0",
   "description": "Sample web app and helper scripts to get started with Twitter's Account Activity API",
   "engines": {
-    "node": "5.9.1"
+    "node": "12.11.1"
   },
   "main": "app.js",
   "scripts": {
-    "dev": "react-scripts start",
-    "start": "serve -s build",
-    "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject",
-    "heroku-postbuild": "npm run build"
-    },
+    "start": "node app.js",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
+  },
   "dependencies": {
     "body-parser": "^1.16.1",
     "command-line-args": "^5.0.1",
