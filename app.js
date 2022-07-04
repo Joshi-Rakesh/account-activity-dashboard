@@ -28,12 +28,6 @@ app.use(
   })
 );
 
-// let port = process.env.PORT || 8080;
-
-// app.listen(port, () => {
-//   console.log(`app is running at the port ${port}`);
-// });
-
 //start server
 const server = app.listen(app.get("port"), function () {
   console.log("Node app is running on port", app.get("port"));
