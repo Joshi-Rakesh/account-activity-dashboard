@@ -1,6 +1,6 @@
 {
   "name": "twitter-webhook-boilerplate-node",
-  "homepage": "https://sagar-go.github.io/sagar-webhook",
+  "homepage": "https://github.com/Joshi-Rakesh/account-activity-dashboard",
   "version": "1.0.0",
   "description": "Sample web app and helper scripts to get started with Twitter's Account Activity API",
   "engines": {
